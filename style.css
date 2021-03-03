@@ -227,6 +227,9 @@ justify-content: space-between;
   justify-content: space-around;
 }
 
+.reviews_left {
+}
+
 .review {
   display: flex; 
 } 
