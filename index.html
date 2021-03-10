@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Artboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a1c9c1507.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,7 +32,9 @@
                 </p>
             </div>
         </section>
-        <img class="header_right header_img" src="images/Shape%209.svg" alt="photo">
+        <!-- <img class="header_right header_img" src="images/Shape%209.svg" alt="photo"> -->
+        <img class="about_video about_right" src="images/image header.jpg" alt="photo">
+        </video>
     </header>
     <section class="about">
         <article class="about_left">
@@ -43,7 +46,9 @@
                 exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde
                 perferendis nemo debitis dolor.</p>
         </article>
-        <img class="about_video about_right" src="images/video.svg" alt="photo">
+
+        <video class="header_right header_img" controls height="220" width="472">
+            <source src="media/video.mp4" type="video/mp4">
     </section>
     <section class="pluses">
         <h2 class="heading_pluses">Dignity and pluses product</h2>
@@ -296,15 +301,20 @@
             <h2 class="heading_contacts">Contacts</h2>
         </article>
         <section class="body_contacts">
-            <section class="form">
-                <input class="input_text" type="text" placeholder="Your name:"> <br>
-                <input class="input_text" type="text" placeholder="Your email:"> <br>
-                <textarea class="input_text" cols="30" rows="10" placeholder="Your massege:"></textarea>
+            <form action="#" class="form">
+                <label for="name"></label>
+                <input id="name" class="input_text" type="text" placeholder="Your name:" autofocus required
+                    pattern="[A-Z][A-Za-z' -]+"> <br>
+                <label for="email"></label>
+                <input id="email" class="input_text" type="text" placeholder="Your email:" required
+                    pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"> <br>
+                <label for="comments"></label>
+                <textarea id="comments" class="input_text" cols="30" rows="10" placeholder="Your massege:"></textarea>
                 <br>
-                <button class="button_submit" type="submit">
+                <button class="button_submit" type="submit" value="Create">
                     SEND
                 </button>
-            </section>
+            </form>
             <article class="contacts_content">
                 <p class="text_contacts text_skype">
                     <img class="skype_vector" src="images/skypevector.svg" alt="">
@@ -322,16 +332,14 @@
                     <img class="phone_vector" src="images/phonevector.svg" alt="">
                     80 00 4568 55 55
                 </p>
-                <a href=""><img class="twitter_icon" src="images/twittericon.svg" alt=""></a>
-                <a href="">
-                    <img class="vk_icon" src="images/vkicon.svg" alt="">
-                </a>
-                <a href="">
-                    <img class="gmail_icon" src="images/gmailicon.svg" alt="">
-                </a>
-                <a href="">
-                    <img class="facebook_icon" src="images/facebookicon.svg" alt="">
-                </a>
+                <div class="social_flex">
+                    <div class="social_item"><a class="social_link" href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="social_item"><a class="social_link" href="#"><i class="fab fa-vk"></i></a></div>
+                    <div class="social_item"><a class="social_link" href="#"><i class="fab fa-facebook-f"></i></a></div>
+                    <div class="social_item">
+                        <a class="social_link" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
             </article>
         </section>
     </footer>
