@@ -31,7 +31,10 @@
                 </p>
             </div>
         </section>
-        <img class="header_right header_img" src="images/Shape%209.svg" alt="photo">
+        <!-- <img class="header_right header_img" src="images/Shape%209.svg" alt="photo"> -->
+        <video class="header_right header_img" controls height="220" width="472">
+            <source src="media/video.mp4" type="video/mp4">
+        </video>
     </header>
     <section class="about">
         <article class="about_left">
@@ -296,15 +299,20 @@
             <h2 class="heading_contacts">Contacts</h2>
         </article>
         <section class="body_contacts">
-            <section class="form">
-                <input class="input_text" type="text" placeholder="Your name:"> <br>
-                <input class="input_text" type="text" placeholder="Your email:"> <br>
-                <textarea class="input_text" cols="30" rows="10" placeholder="Your massege:"></textarea>
+            <form action="#" class="form">
+                <label for="name"></label>
+                <input id="name" class="input_text" type="text" placeholder="Your name:" autofocus required
+                    pattern="[A-Z][A-Za-z' -]+"> <br>
+                <label for="email"></label>
+                <input id="email" class="input_text" type="text" placeholder="Your email:" required
+                    pattern="[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+"> <br>
+                <label for="comments"></label>
+                <textarea id="comments" class="input_text" cols="30" rows="10" placeholder="Your massege:"></textarea>
                 <br>
-                <button class="button_submit" type="submit">
+                <button class="button_submit" type="submit" value="Create">
                     SEND
                 </button>
-            </section>
+            </form>
             <article class="contacts_content">
                 <p class="text_contacts text_skype">
                     <img class="skype_vector" src="images/skypevector.svg" alt="">

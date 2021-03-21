@@ -532,3 +532,15 @@ textarea {
   padding-top: 47px;
   padding-left: 50px;
 }
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid:required {
+  background-color: white;
+}
+
+input:valid {
+  border: 2px solid black;
+}
